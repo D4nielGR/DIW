@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .navText { color: gold; }
+
+        @media (min-width: 992px) {
+            /* HEADER */
+            .navName {
+                font-size: 30px;
+                padding: 19px 0px 0px 0px;
+            }
+            .navText {
+                font-size: 23px;
+            }
+            .divThird {
+                padding: 12px 0px 0px 0px;
+            }
+
+            /* BODY */
+            .section {
+                border: 30px solid #6f31a5;
+            }
+            .sectionTittle{
+                background-color: #407ACF ;
+                padding: 15px 0px 15px 30px;
+                color: gold;
+            }
+            #inicio .desc{
+                padding: 100px 50px 0 50px;
+            }
+            .pIni {
+                margin-bottom: 5px;
+            }
+
+            /* CONOCIMIENTOS */
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                position: absolute; 
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px; 
+                transition: all 0.5s ease; 
+            }
+            
+            .carousel-item img {
+                height: 600px;
+            }
+
+            /* PROYECTOS */
+            .LogoBosquedron {
+                width: 400px;
+                height: 400px;
+                margin-bottom: 40px;
+                margin-left: 40px;
+            }
+
+            /* FOOTER */
+            footer div p{
+                font-size: 17px;
+            }
+            footer div a{
+                font-size: 30px;
+                padding: 0px 4px;
+                color: darkblue;
+            }
+        }
+        @media (max-width: 991px)  {
+            /* HEADER */
+            .navName {
+                font-size: 22px;
+                padding: 23px 0px 0px 0px;
+            }
+            .navText {
+                font-size: 15px;
+                padding: 8px 0px 0px 0px;
+            }
+            .divThird {
+                padding: 20px 0 0 0;
+            }
+
+            /* BODY */
+                /* INICIO */
+            .section {
+                border: 30px solid #6f31a5;
+            }
+            .sectionTittle{
+                background-color: #407ACF ;
+                padding: 15px 0px 15px 30px;
+                color: gold;
+            }
+            #inicio .desc{
+                padding: 100px 50px 0 50px;
+            }
+            .pIni {
+                margin-bottom: 5px;
+            }
+
+                /* CONOCIMIENTOS */
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                position: absolute; 
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 00px; 
+                transition: all 0.5s ease; 
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+            /* PROYECTOS */
+            .LogoBosquedron {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            /* FOOTER */
+            footer div p{
+                font-size: 13px;
+            }
+            footer div a{
+                font-size: 25px;
+                padding: 0px 4px;
+                color: darkblue;
+            }
+        }
+        @media (max-width: 451px)  {
+            /* HEADER */
+            .navName {
+                font-size: 17px;
+                padding: 15px 0px 0px 0px;
+            }
+            .navText {
+                font-size: 10px;
+                padding: 4px 0px 0px 0px;
+            }
+            nav div img {
+                width: 60px;
+                height: 56px;
+            }
+            .divThird {
+                padding: 8px 0 0 0;
+            }
+
+            /* BODY */
+            .section {
+                border: 30px solid #6f31a5;
+            }
+            .sectionTittle{
+                background-color: #407ACF ;
+                padding: 15px 0px 15px 30px;
+                color: gold;
+            }
+            #inicio .desc{
+                padding: 100px 50px 0 50px;
+            }
+            .pIni {
+                margin-bottom: 5px;
+            }
+
+            /* CONOCIMIENTOS */
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                position: absolute; 
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 42%;
+                padding: 0px; 
+                transition: all 0.5s ease; 
+            }
+        
+            .carousel-item img {
+                height: 200px;
+            }
+            
+            /* PROYECTOS */
+            .LogoBosquedron {
+                width: auto;
+                height: 150px;
+            }
+
+            /* FOOTER */
+            footer div p{
+                font-size: 9px;
+            }
+            footer div a{
+                font-size: 20px;
+                padding: 0px 4px;
+                color: darkblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar py-0" style="background-color: #5A07A2;">
+        <!-- Imagen del logo de navbar -->
+        <div class="row w-100">
+            <div class="divFirst col-auto">
+                <a class="navbar-brand my-0" href="#">
+                    <img src="./img/navLogo.png" alt="Logo" width="100%" height="80">
+                </a>
+            </div>
+
+            <div class="divSecond col-auto">
+                <p class="navName" style="color: yellow;">Daniel Guerrero Reina</p>
+            </div>
+
+            <div class="divThird col-auto ms-auto">
+                <!-- Cuando la pantalla sea más pequeña, el siguiente div, con id="navbarNav" se colapsará en un botón -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Contenido coordinado al collapse -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-4">
+                        <li class="nav-item active">
+                            <a class="nav-link navText" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link navText" href="#conocimientos">Conocimientos</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link navText" href="#proyectos">Proyectos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <body style="background-color: #d7a8ff;">
+        
+        <section class="section" id="inicio">
+            <div class="row">
+                <div class="col-12 sectionTittle">
+                    <h2>Inicio</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-md-7 col-lg-8 desc pt-2">
+                    <p class="pIni pb-5">Hola, soy Daniel Guerrero Reina y soy Desarrollador de Aplicaciones Web.</p>
+                    <p class="pIni">Aquí podréis ver mi primer portfolio. Es especial, ya que significa para mí el comienzo en este mundo.</p>
+                    <p class="pIni">Aún me considero Junior Developer, pero sigo en proceso para desarrollarme más y más cada día.</p>
+                    <p class="pIni">Dicho esto, soy consciente de que este portfolio requiere de mucha mejora e iré mejorándolo en base a mis aprendizajes.</p>    
+                    <p class="pIni">Se pueden ver algunos de los conocimientos que he adquirido en el grado superior de DAW, en el centro <a class="a-link" href="https://sites.google.com/iesromerovargas.com/romerovargas/inicio">I.E.S Francisco Romero Vargas</a></p>    
+                </div>
+                <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                    <img src="./img/myFace.png" alt="Mi foto" width="150%" height="100%">
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="section" id="conocimientos">
+            <div class="row">
+                <div class="col-12 sectionTittle">
+                    <h2>Conocimientos</h2>
+                </div>
+                <div id="carouselExampleControls" class="col carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/phoHTML.jpg" class="d-block w-100" alt="HTML">
+                            <div class="carousel-caption">
+                                <h5>HTML</h5>
+                                <p>Estructura básica de una página web.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoCSS.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>CSS</h5>
+                                <p>Estilos y diseño de la página web.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoJS.jpg" class="d-block w-100" alt="JavaScript">
+                            <div class="carousel-caption">
+                                <h5>JavaScript</h5>
+                                <p>Interactividad y dinamismo en la web.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoPHP.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>PHP</h5>
+                                <p>Desarrollo de aplicaciones web dinámicas utilizando PHP.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoRea.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>React</h5>
+                                <p>Creación de interfaces de usuario interactivas con React.js.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoBoo.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>Bootstrap</h5>
+                                <p>Diseño de páginas web responsivas con Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoGit.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>Git&GitHub</h5>
+                                <p>Gestión de control de versiones y colaboración con Git y GitHub.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/phoDoc.jpg" class="d-block w-100" alt="CSS">
+                            <div class="carousel-caption">
+                                <h5>Docker</h5>
+                                <p>Implementación de contenedores para desarrollo y despliegue con Docker.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="proyectos" style="background-color: #c4a68c;">
+            <div class="row">
+                <div class="col-12 sectionTittle">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="col-12">
+                    <img src="./Bosquedron/BosquedronTittle.svg" alt="Título de Bosquedron">
+                </div>
+                <div class="col-12 col-sm text-center">
+                    <img class="LogoBosquedron " src="./Bosquedron/BosquedronLogo.png" alt="Logo de Bosquedron">
+                </div>
+                <div class="col p-5 pt-0">
+                    <p class="pIni">Bosquedron consiste en un proyecto que esta en proceso de realización.</p>
+                    <p class="pIni">Consiste en un proyecto de fin de grado que presentaré en Junio. Este proyecto se trata de una página para parques naturales.</p>
+                    <p class="pIni">Para más información, en mi <a href="https://github.com/D4nielGR/Final-project-DAW">github</a> tengo subida toda la documentación previa al proyecto.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <footer style="background-color: #5A07A2;">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-2 navText">Contact me</p>
+            </div>
+            <div class="col text-center">
+                <p class="mb-1"  style="color: #4e8ae4;">
+                    <b style="color: rgb(190, 162, 0);">Email: </b>daniprogguerrero@gmail.com <i class="fas fa-envelope" style="color: darkblue;"></i>
+                </p> 
+                <p class="mb-1" style="color: #4e8ae4;">
+                    <b style="color: rgb(190, 162, 0);">Phone: </b>605 71 26 17 <i class="fas fa-phone" style="color: darkblue;"></i>
+                </p> 
+                <a href="https://github.com/D4nielGR"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/daniel14_gr/"><i class="fab fa-instagram"></i></a>
+                <p class="mb-1"  style="font-size: 20px; color: #f00;">❤Gracias por tu tiempo❤</p> 
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
